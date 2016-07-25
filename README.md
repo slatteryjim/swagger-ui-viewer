@@ -16,3 +16,8 @@ Note the port and json file are customizable, e.g. to use localhost:5000 and `/t
 $ docker run -p 5000:80 -v /tmp/my-swagger-file.json:/www/swagger.json slattery/swagger-ui-viewer
                 ^^^^       ^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
+
+For fun, here's a one-liner to pull and run the image, and launch a browser with the results:
+```bash
+$ docker pull slattery/swagger-ui-viewer && docker run -p 8080:80 -v $PWD/swagger/swagger.json:/www/swagger.json slattery/swagger-ui-viewer | (sleep 1 && open http://localhost:8080)
+```
