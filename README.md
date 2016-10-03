@@ -1,6 +1,6 @@
 # swagger-ui-viewer
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/slattery/swagger-ui-viewer.svg?maxAge=2592000)](https://hub.docker.com/r/slattery/swagger-ui-viewer/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/slattery/swagger-ui-viewer.svg?maxAge=2592000)](https://hub.docker.com/r/slattery/swagger-ui-viewer/) [![](https://images.microbadger.com/badges/image/slattery/swagger-ui-viewer.svg)](https://microbadger.com/images/slattery/swagger-ui-viewer "Get your own image badge on microbadger.com")
 
 Launch a quick web UI for your swagger.json file.
 
@@ -21,3 +21,4 @@ For fun, here's a one-liner to pull and run the image, and launch a browser with
 ```bash
 $ docker pull slattery/swagger-ui-viewer && docker run --rm -p 8080:80 -v $PWD/swagger/swagger.json:/www/swagger.json slattery/swagger-ui-viewer | (sleep 1 && open http://localhost:8080)
 ```
+ 
